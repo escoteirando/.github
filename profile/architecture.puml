@@ -1,0 +1,22 @@
+@startuml Architecture
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+
+!include DEVICONS/go.puml
+!include DEVICONS2/vuejs.puml
+
+
+
+Container(home, "Escoteirando Dev Home", "VueJS", "Development information portal", $sprite="vuejs")
+Container(mappa_proxy, "Mappa Proxy", "GoLang", "escoteiros.org.br mappa proxy", $sprite="go")
+
+
+' Person(personAlias, "Label", "Optional Description")
+' Container(containerAlias, "Label", "Technology", "Optional Description")
+' System(systemAlias, "Label", "Optional Description")
+
+' Rel(personAlias, containerAlias, "Label", "Optional Technology")
+@end
