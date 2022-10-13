@@ -7,3 +7,4 @@ Escoteirando é um conjunto de aplicações para apoio do desenvolvimento e comp
 ## Links
 
 * https://dev.to/mfbmina/enriquecendo-requests-com-traefik-f77
+* https://gocopper.dev/
