@@ -29,9 +29,13 @@ analise_historica_jovem --|> login
 package "Banco de dados de atividades" {    
     usecase (Cadastro de\natividades) as cadastro_atividades
     usecase (Cadastro de\nencontros) as cadastro_encontros        
+    usecase (Ferramenta de\nbusca) as ferramenta_busca
+    usecase (Sistema de \npontuação) as sistema_pontuacao
 }
 cadastro_atividades --|> login
 cadastro_encontros --|> login
+ferramenta_busca --|> login
+sistema_pontuacao --|> login
 
 escotista --> login
 escotista --> logout
@@ -47,4 +51,6 @@ escotista --> analise_historica_jovem
 
 escotista --> cadastro_atividades
 escotista --> cadastro_encontros
+escotista --> ferramenta_busca
+escotista --> sistema_pontuacao
 @enduml
