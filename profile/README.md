@@ -2,7 +2,7 @@
 
 Escoteirando é um conjunto de aplicações para apoio do desenvolvimento e compartilhamento de atividades escoteiras.
 
-![Architecture](Architecture.png)
+![Architecture](Architecture.svg)
 
 Domínio principal: escoteirando.net.br
 

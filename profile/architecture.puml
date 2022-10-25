@@ -15,6 +15,8 @@ Container(portal, "Escoteirando Portal","VueJS", "github.com/escoteirando/escote
 Container(mappa_proxy, "Mappa Proxy", "GoLang","https://mappa-proxy.fly.dev/", $sprite="go")
 
 Rel(mappa,mappa_proxy,"/api/*")
+Rel(mappa_proxy,portal,"*")
+Rel(mappa_proxy,home,"*")
 ' Person(personAlias, "Label", "Optional Description")
 ' Container(containerAlias, "Label", "Technology", "Optional Description")
 ' System(systemAlias, "Label", "Optional Description")
