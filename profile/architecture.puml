@@ -9,11 +9,12 @@
 !include DEVICONS2/vuejs.puml
 
 
-
+Container(mappa,"mAppa","nodejs","mappa.escoteiros.org.br")
 Container(home, "Escoteirando Dev Home", "VueJS", "Development information portal", $sprite="vuejs")
-Container(mappa_proxy, "Mappa Proxy", "GoLang", "escoteiros.org.br mappa proxy", $sprite="go")
+Container(portal, "Escoteirando Portal","VueJS", "github.com/escoteirando/escoteirando-portal", $sprite="vuejs")
+Container(mappa_proxy, "Mappa Proxy", "GoLang","https://mappa-proxy.fly.dev/", $sprite="go")
 
-
+Rel(mappa,mappa_proxy,"/api/*")
 ' Person(personAlias, "Label", "Optional Description")
 ' Container(containerAlias, "Label", "Technology", "Optional Description")
 ' System(systemAlias, "Label", "Optional Description")
